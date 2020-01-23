@@ -11,18 +11,20 @@
 </head>
 
 <body>
-    <header>
-        <h1>Informatics Student</h1>
-        <span>A Senior in the Informatics Programm at the University of Washington, seeking meaningful employment.</span>
+    <header class="jumbotron">
+        <h1 class="display-3">Informatics Student</h1>
+        <span class="lead">A Senior in the Informatics Programm at the University of Washington, seeking meaningful
+            employment.</span>
+        <hr class="my-2">
         <nav>
-            <ul>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link active" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <section id="interests">
             <h2>My Interests</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veritatis nihil ipsam neque, necessitatibus
@@ -31,45 +33,66 @@
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <div>
-                <div>
+            <div class="d-flex flex-column mx-auto container w-75">
+                <div class="p-2 row">
                     <h3>Project 1</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quisquam tempore sint reiciendis
                         quis, quo soluta amet odit tempora voluptatem corporis animi optio ipsum eaque consequuntur
                         voluptate odio omnis quod?</p>
-                    <a href="">View Project</a>
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-primary"><a class="text-white" href="">View
+                                Project</a></button>
+                    </div>
                 </div>
-                <div>
+                <div class="p-2 row">
                     <h3>Project 2</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quisquam tempore sint reiciendis
                         quis, quo soluta amet odit tempora voluptatem corporis animi optio ipsum eaque consequuntur
                         voluptate odio omnis quod?</p>
-                    <a href="">View Project</a>
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-primary"><a class="text-white" href="">View
+                                Project</a></button>
+                    </div>
                 </div>
-                <div>
+                <div class="p-2 row">
                     <h3>Project 3</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quisquam tempore sint reiciendis
                         quis, quo soluta amet odit tempora voluptatem corporis animi optio ipsum eaque consequuntur
                         voluptate odio omnis quod?</p>
-                    <a href="">View Project</a>
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-primary"><a class="text-white" href="">View
+                                Project</a></button>
+                    </div>
                 </div>
             </div>
 
         </section>
         </section>
+
         <section id="about">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate placeat debitis officia
-                nesciunt similique iure temporibus, iste sapiente nemo possimus laborum impedit quaerat dolore. Placeat
-                quod officiis maxime rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quo. Impedit
-                molestiae quaerat omnis laboriosam deleniti iure sit dolore quasi quidem repudiandae. Quo inventore
-                tempora exercitationem assumenda asperiores doloremque molestiae.</p>
-            <img src="./imgs/College-Student-Discounts.jpg" alt="Personal profile picture">
+            <div class="d-flex flex-row flex-no-wrap">
+                <div class="p-5 row order-8">
+                    <h2>About</h2>
+                
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate placeat debitis
+                        officia
+                        nesciunt similique iure temporibus, iste sapiente nemo possimus laborum impedit quaerat dolore.
+                        Placeat
+                        quod officiis maxime rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quo.
+                        Impedit
+                        molestiae quaerat omnis laboriosam deleniti iure sit dolore quasi quidem repudiandae. Quo
+                        inventore
+                        tempora exercitationem assumenda asperiores doloremque molestiae.</p>
+                </div>
+                <div class="p-5 row order-3"><img src="./imgs/College-Student-Discounts.jpg" class="img-thumbnail"
+                        alt="Personal profile picture"></div>
+            </div>
         </section>
+
     </main>
     <footer>
         <div>
-            <span>Image from <a href="https://morguefile.com/" target="_blank">MorgueFile</a></span>
+            <span class="float-right">Image from <a href="https://morguefile.com/" target="_blank">MorgueFile</a></span>
         </div>
     </footer>
 </body>
